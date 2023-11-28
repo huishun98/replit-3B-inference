@@ -44,7 +44,7 @@ generation_config = GenerationConfig(
     max_new_tokens=512,  # adjust as needed
     seed=42,
     reset=True,  # reset history (cache)
-    stream=True,  # streaming per word/token
+    stream=False,  # streaming per word/token
     threads=int(os.cpu_count() / 6),  # adjust for your CPU
     stop=["<|endoftext|>"],
 )
